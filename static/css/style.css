@@ -679,11 +679,16 @@ html[dir="ltr"] .ocr-output-content {
     padding: 40px;
 }
 
-/* Responsive tweaks */
 @media (max-width: 900px) {
+    #upload-view.center-content {
+        overflow-y: auto !important;
+        align-items: flex-start !important;
+        padding: 30px 20px !important;
+    }
+    
     .landing-container {
         flex-direction: column;
-        gap: 40px;
+        gap: 30px;
         text-align: center;
     }
     .landing-info {
@@ -741,6 +746,24 @@ html[dir="ltr"] .ocr-output-content {
     .header-actions {
         justify-content: center !important;
         gap: 10px !important;
+    }
+    
+    .upload-card {
+        padding: 24px 16px !important;
+        margin-bottom: 20px !important;
+    }
+    
+    .landing-info h2 {
+        font-size: 1.5rem !important;
+    }
+    
+    .landing-desc {
+        font-size: 0.95rem !important;
+        margin-bottom: 20px !important;
+    }
+    
+    .landing-goals li {
+        font-size: 0.9rem !important;
     }
 }
 
