@@ -69,7 +69,7 @@ def upload_file():
                 # Add to pages list
                 pages.append({
                     'index': page_num,
-                    'url': f"/uploads/{doc_id}/pages/{page_filename}"
+                    'url': f"uploads/{doc_id}/pages/{page_filename}"
                 })
             doc.close()
         elif file_ext in ['.png', '.jpg', '.jpeg', '.webp']:
@@ -84,7 +84,7 @@ def upload_file():
             
             pages.append({
                 'index': 0,
-                'url': f"/uploads/{doc_id}/pages/{page_filename}"
+                'url': f"uploads/{doc_id}/pages/{page_filename}"
             })
             total_pages = 1
         else:

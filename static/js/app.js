@@ -162,7 +162,7 @@ function handleFileUpload(file) {
 
     showToast('جاري رفع المستند ومعالجته...');
     
-    fetch('/api/upload', {
+    fetch('api/upload', {
         method: 'POST',
         body: formData
     })
@@ -251,7 +251,7 @@ function runOCR() {
     processingOverlay.style.display = 'flex';
     ocrContent.style.display = 'none';
     
-    fetch('/api/process', {
+    fetch('api/process', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
