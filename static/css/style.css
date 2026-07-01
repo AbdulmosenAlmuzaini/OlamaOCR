@@ -595,3 +595,102 @@ body {
     to { transform: translateY(0); opacity: 1; }
 }
 
+/* Landing Container Layout */
+.landing-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1100px;
+    width: 100%;
+    gap: 60px;
+    animation: fadeIn 0.4s ease-out;
+}
+
+.landing-info {
+    flex: 1.2;
+    text-align: right;
+}
+
+.landing-info h2 {
+    font-size: 2.2rem;
+    color: var(--accent-color);
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.landing-desc {
+    font-size: 1.1rem;
+    color: var(--text-primary);
+    line-height: 1.8;
+    margin-bottom: 32px;
+}
+
+.landing-goals h3 {
+    font-size: 1.25rem;
+    color: var(--text-primary);
+    margin-bottom: 16px;
+    font-weight: 600;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 8px;
+    display: inline-block;
+}
+
+.landing-goals ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.landing-goals li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 1rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.landing-goals li span {
+    flex-grow: 1;
+}
+
+.goal-icon {
+    color: var(--accent-color);
+    margin-top: 4px;
+    flex-shrink: 0;
+}
+
+/* Make upload-view a normal flex container, not just centering */
+#upload-view.center-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 64px);
+    padding: 40px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 900px) {
+    .landing-container {
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+    }
+    .landing-info {
+        text-align: center;
+    }
+    .landing-info h2 {
+        font-size: 1.8rem;
+    }
+    .landing-goals h3 {
+        display: block;
+        width: fit-content;
+        margin: 0 auto 16px auto;
+    }
+    .landing-goals li {
+        justify-content: center;
+    }
+}
+
+
